@@ -1,4 +1,4 @@
-Thực hành Website Buổi 1 (ngày 24/09/2025)
+Thực hành Website (ngày 24/09/2025)
 
 1. Yêu cầu của thầy: Tạo component + props trong dự án  
 
@@ -11,3 +11,6 @@ Thực hành Website Buổi 1 (ngày 24/09/2025)
       - Post.tsx (Dùng props để có thể tái sử dụng component: giúp cho việc tạo bài viết blog dễ dàng hơn)  
 
 3. Kết thúc thực hành hôm 24/09/2025.
+
+Thực hành website (ngày 1/10/2025)
+1.Yêu Cầu cảu thầy: Tạo file html và css trang chủ và push lên github
