@@ -121,8 +121,6 @@ body{
   text-decoration-thickness: 2px;
 }
 
-
-
 .post__meta{
   text-align:center;
   color:var(--muted);
@@ -187,5 +185,10 @@ body{
 
 .divider{ border-top:1px solid var(--line); margin:28px 0 0; }
 
-
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
 

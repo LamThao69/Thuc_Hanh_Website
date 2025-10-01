@@ -1,0 +1,134 @@
+/* ===== Login page (scoped) ===== */
+
+/* Ảnh nền phủ toàn màn hình, TRỪ phần header ở trên */
+.background {
+  position: fixed;
+  top: var(--header-h, 72px);  /* 👈 chỉnh chiều cao header tại page.tsx */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url("/images/background.png") center/cover no-repeat;
+}
+
+/* Container chiếm toàn bộ phần còn lại, không tạo scrollbar */
+.container {
+  height: calc(100vh - var(--header-h, 72px));  /* đổi từ min-height → height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 16px;
+  overflow: hidden;   /* chặn tràn */
+  box-sizing: border-box;
+}
+
+/* Card form (kính mờ) */
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+
+  /* kính mờ */
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.9rem;
+  margin-bottom: 18px;
+  color: #000;
+  font-weight: 800;
+}
+
+.inputField {
+  position: relative;
+  border-bottom: 2px solid #000;
+  margin: 14px 0;
+}
+
+.inputField input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+}
+
+.inputField label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+/* label nổi khi focus/đã nhập */
+.inputField input:focus ~ label,
+.inputField input:not(:placeholder-shown) ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 0 28px 0;
+  color: #000;
+  gap: 12px;
+}
+
+.remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+.remember input[type="checkbox"] { accent-color: #000; }
+
+.form a {
+  color: #000;
+  text-decoration: none;
+}
+.form a:hover { text-decoration: underline; }
+
+.btn {
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #000;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.register {
+  text-align: center;
+  margin-top: 18px;
+  color: #000;
+}
+.register a:hover {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
