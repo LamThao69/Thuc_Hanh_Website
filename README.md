@@ -1,4 +1,4 @@
-Thực hành Website (ngày 24/09/2025)
+I.Thực hành Website (ngày 24/09/2025)
 
    1. Yêu cầu của thầy: Tạo component + props trong dự án  
 
@@ -12,10 +12,10 @@ Thực hành Website (ngày 24/09/2025)
 
    3. Kết thúc thực hành hôm 24/09/2025.
 
-Thực hành website (ngày 1/10/2025)
+II.Thực hành website (ngày 1/10/2025)
 
    1.Yêu cầu của thầy: Tạo file html và css trang chủ và push lên github
 
-Thực hành website (ngày 8/10/2025)
+III.Thực hành website (ngày 8/10/2025)
 
    1. Yêu cầu của thầy: tạo react và các component dựa trên file html và css đã tạo ngày 1/10/2025
